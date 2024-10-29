@@ -2,6 +2,7 @@ services:
   deluge:
     image: lscr.io/linuxserver/deluge:latest
     container_name: deluge
+    env_file: .env
     environment:
             - PUID=${puid}
             - PGID=${guid}
